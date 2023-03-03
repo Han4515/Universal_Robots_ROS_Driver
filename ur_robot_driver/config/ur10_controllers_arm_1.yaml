@@ -136,6 +136,10 @@ forward_joint_traj_controller:
 
 forward_cartesian_traj_controller:
     type: "pass_through_controllers/CartesianTrajectoryController"
+
+    # UR driver convention
+    base: base_1
+    tip: tool1_controller
     joints: *robot_joints
 
 twist_controller:
